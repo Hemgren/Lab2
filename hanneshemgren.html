@@ -11,53 +11,57 @@
 
     <h2>Visitor Information</h2>
     <form id="form"> 
-        <label for="firstName">First Name:</label>
+        <label for="firstName">First Name: <span style="color: red;">*</span></label>
         <input type="text" id="firstName"> 
         <span id="firstNameError" style="color: red;"></span> <br><br>
 
-        <label>Last Name:</label>
+        <label>Last Name: <span style="color: red;">*</span></label>
         <input type="text" id="lastName"> 
         <span id="lastNameError" style="color: red;"></span> <br><br>
 
-        <label>Email:</label>
+        <label>Email: <span style="color: red;">*</span></label>
         <input type="text" id="email"> 
         <span id="emailError" style="color: red;"></span> <br><br>
 
 
    
         <h2>The Quiz:</h2>
-        <p> What is the capital of Australia?</p> 
+        <p> What is the capital of Australia? <span style="color: red;">*</span></p> 
+          <span id="capitalError" style="color: red;"></span> <br>
         <label>Sydney</label>
-        <input type="radio"> <br>
+        <input type="radio" name="capital"> <br>
 
         <label>Melbourne</label>
-        <input type="radio"> <br>
+        <input type="radio" name="capital"> <br>
 
         <label>Canberra</label>
-        <input type="radio"> <br>
+        <input type="radio" name="capital"> <br>
 
         <label>Perth</label>
-        <input type="radio"> <br>
+        <input type="radio" name="capital"> <br>
 
         <label>Brisbane</label>
-        <input type="radio"> <br>
+        <input type="radio" name="capital"> <br>
+      
 
 
-        <p> Which of the following are Australian states?</p>
+        <p> Which of the following are Australian states? <span style="color: red;">*</span></p>
+          <span id="statesError" style="color: red;"></span> <br>
         <label>Northen Territory</label>
-        <input type="checkbox">
+        <input type="checkbox" name="states">
 
         <label>New East Wales</label>
-        <input type="checkbox">
+        <input type="checkbox" name="states">
 
         <label>South Australia</label>
-        <input type="checkbox">
+        <input type="checkbox" name="states">
 
         <label>Kingsland</label>
-        <input type="checkbox">
+        <input type="checkbox" name="states">
 
         <label>Victoria</label>
-        <input type="checkbox">
+        <input type="checkbox" name="states">
+      
 
         <p>What do you think of when you hear Australia?</p>
         <textarea></textarea>
@@ -67,10 +71,10 @@
 
         <P>The original name of Australia was New Holland</P>
         <label>True</label>
-        <input type="radio"> <br>
+        <input type="radio" name="trueOrFalse"> <br>
 
         <label>False</label>
-        <input type="radio"> <br>
+        <input type="radio" name="trueOrFalse"> <br>
 
 
         <input type="submit"> <br>

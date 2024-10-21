@@ -5,10 +5,16 @@ document.getElementById('form').addEventListener('submit', function (event) {
     document.getElementById('firstNameError').textContent = ''; 
     document.getElementById('lastNameError').textContent = '';   
     document.getElementById('emailError').textContent = ''; 
+    document.getElementById('capitalError').textContent = '';
+    document.getElementById('statesError').textContent = '';
+
 
     const firstName = document.getElementById('firstName').value;
     const lastName = document.getElementById('lastName').value;
     const email = document.getElementById('email').value;
+
+    const capital = document.querySelector('input[name="capital"]:checked');
+    const states = document.querySelectorAll('input[name="states"]:checked');
 
     const namePattern = /^[A-Za-z]+$/;
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -38,9 +44,22 @@ document.getElementById('form').addEventListener('submit', function (event) {
         document.getElementById('emailError').textContent = 'Please enter a valid email address.';
         valid = false;
     }
+      
+    if (!capital) {
+        document.getElementById('capitalError').textContent = 'Please select your guess';
+        valid = false;
+    } else { 
+        document.getElementById('capitalError').textContent = '';
+    } 
+
+    if (states.length === 0) {
+        document.getElementById('statesError').textContent = 'Please select at least one option';
+        valid = false;
+    } else { 
+        document.getElementById('statesError').textContent = '';
+    } 
 
     if (valid) {
         alert('Quiz Submitted!')
     }
-      
 });
