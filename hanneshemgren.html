@@ -4,80 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hannes Quiz</title>
+    <link rel="stylesheet" href="hanneshemgren.css">
 </head>
 <body>
 
     <h1> Australia Quiz</h1>
 
-    <h2>Visitor Information</h2>
+    
     <form id="form"> 
-        <label for="firstName">First Name: <span style="color: red;">*</span></label>
-        <input type="text" id="firstName"> 
-        <span id="firstNameError" style="color: red;"></span> <br><br>
 
-        <label>Last Name: <span style="color: red;">*</span></label>
-        <input type="text" id="lastName"> 
-        <span id="lastNameError" style="color: red;"></span> <br><br>
+        <h2>Visitor Information</h2>
+        <label for="firstName">First Name: <span>*</span></label>
+        <input type="text" id="firstName" class="text"> 
+        <span id="firstNameError"></span> <br><br>
 
-        <label>Email: <span style="color: red;">*</span></label>
-        <input type="text" id="email"> 
-        <span id="emailError" style="color: red;"></span> <br><br>
+        <label>Last Name: <span>*</span></label>
+        <input type="text" id="lastName" class="text"> 
+        <span id="lastNameError"></span> <br><br>
+
+        <label>Email: <span>*</span></label>
+        <input type="text" id="email" class="text"> 
+        <span id="emailError"></span> <br><br>
 
 
    
         <h2>The Quiz:</h2>
-        <p> What is the capital of Australia? <span style="color: red;">*</span></p> 
-          <span id="capitalError" style="color: red;"></span> <br>
-        <label>Sydney</label>
-        <input type="radio" name="capital"> <br>
+        <p> What is the capital of Australia? <span>*</span></p> 
+          <span id="capitalError"></span> <br>
+        <label> <input type="radio" name="capital"> Sydney</label> <br>
 
-        <label>Melbourne</label>
-        <input type="radio" name="capital"> <br>
+        <label><input type="radio" name="capital"> Melbourne</label> <br>
 
-        <label>Canberra</label>
-        <input type="radio" name="capital"> <br>
+        <label><input type="radio" name="capital"> Canberra</label> <br>
 
-        <label>Perth</label>
-        <input type="radio" name="capital"> <br>
+        <label> <input type="radio" name="capital"> Perth</label> <br>
 
-        <label>Brisbane</label>
-        <input type="radio" name="capital"> <br>
+        <label><input type="radio" name="capital"> Brisbane</label> <br>
       
 
 
-        <p> Which of the following are Australian states? <span style="color: red;">*</span></p>
-          <span id="statesError" style="color: red;"></span> <br>
-        <label>Northen Territory</label>
-        <input type="checkbox" name="states">
+        <p> Which of the following are Australian states? <span>*</span></p>
+          <span id="statesError"></span> <br>
+        <label><input type="checkbox" name="states"> Northen Territory</label> <br>
 
-        <label>New East Wales</label>
-        <input type="checkbox" name="states">
+        <label><input type="checkbox" name="states"> New East Wales  </label> <br>
+        
 
-        <label>South Australia</label>
-        <input type="checkbox" name="states">
+        <label><input type="checkbox" name="states"> South Australia </label> <br>
 
-        <label>Kingsland</label>
-        <input type="checkbox" name="states">
+        <label><input type="checkbox" name="states"> Kingsland</label> <br>
 
-        <label>Victoria</label>
-        <input type="checkbox" name="states">
+        <label> <input type="checkbox" name="states"> Victoria</label> <br>
       
 
         <p>What do you think of when you hear Australia?</p>
-        <textarea></textarea>
+        <input type="text" class="text">
 
         <p>What year did Europeans discover Australia?</p>
-        <input type="text">
+        <input type="text" class="text">
 
         <P>The original name of Australia was New Holland</P>
-        <label>True</label>
-        <input type="radio" name="trueOrFalse"> <br>
+        <label><input type="radio" name="trueOrFalse"> True</label> <br>
 
-        <label>False</label>
-        <input type="radio" name="trueOrFalse"> <br>
+        <label><input type="radio" name="trueOrFalse"> False</label> <br> <br> <br>
 
 
-        <input type="submit"> <br>
+        <input type="submit" id="submitButton"> 
     </form>
 
 

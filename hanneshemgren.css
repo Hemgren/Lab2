@@ -1,0 +1,67 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Style the quiz container */
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+/* Style for headings */
+h2 {
+    font-size: 20px;
+    color: #242424;
+}
+
+p{
+    font-weight: bold;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+
+.text {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+span{
+    color: red;
+}
+
+
+/* Style the submit button */
+#submitButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+#submitButton:hover {
+    background-color: #45a049;
+}
