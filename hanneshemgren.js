@@ -7,6 +7,8 @@ document.getElementById('form').addEventListener('submit', function (event) {
     document.getElementById('emailError').textContent = ''; 
     document.getElementById('capitalError').textContent = '';
     document.getElementById('statesError').textContent = '';
+    document.getElementById('discoverError').textContent = '';
+
 
 
     const firstName = document.getElementById('firstName').value;
@@ -18,6 +20,9 @@ document.getElementById('form').addEventListener('submit', function (event) {
 
     const namePattern = /^[A-Za-z]+$/;
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    const discover = document.getElementById('discover').value;
+
 
     let valid = true;
 
@@ -58,6 +63,11 @@ document.getElementById('form').addEventListener('submit', function (event) {
     } else { 
         document.getElementById('statesError').textContent = '';
     } 
+
+    if (discover === '') {
+        document.getElementById('discoverError').textContent = 'Answer is required';
+        valid = false;
+    }
 
     if (valid) {
         alert('Quiz Submitted!')
